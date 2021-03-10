@@ -15,7 +15,9 @@ header{
   border-bottom: 3px solid #50C7C7;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  
+  
+
 
 
   /*Your  code here again.*/
@@ -27,9 +29,9 @@ header{
   /*Your code here again.*/
   text-decoration: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+
+
   
 }
 
