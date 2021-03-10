@@ -4,6 +4,9 @@ body{
   margin: 0;
   padding: 0;
   font-size: 16pt; 
+  font-family: Raleway, "sans-seriff";
+  background-image: url(css/concrete_seamless.png);
+  
 }
 
 /*Requirement 2*/
