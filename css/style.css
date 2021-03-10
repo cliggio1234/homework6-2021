@@ -5,7 +5,7 @@ body{
   padding: 0;
   font-size: 16pt; 
   font-family: Raleway, "sans-seriff";
-  background-image: url(css/concrete_seamless.png);
+  background-image: url(../images/concrete_seamless.png);
   
 }
 
@@ -13,6 +13,10 @@ body{
 header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
+  display: flex;
+  justify-content: center;
+
+
   /*Your  code here again.*/
 
 }
@@ -20,6 +24,10 @@ header{
 /*Requirement 3*/
 .nav_links{
   /*Your code here again.*/
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  list-style-type: none;
 }
 
 
@@ -44,8 +52,8 @@ header{
 }
 
 /*Requirement 6*/
-/**  UNCOMMENT THIS CODE ONCE YOU
-/**  HAVE THE SELECTOR
+ /*UNCOMMENT THIS CODE ONCE YOU
+ HAVE THE SELECTOR
 {
   background: #288080;
   border: 2px solid #45ADAD;
@@ -92,6 +100,7 @@ header{
 
   /*Requirement 10*/
   header{
+
     /*Your code here again.*/  
   }
 
