@@ -1,13 +1,57 @@
 /*Begin your code here*/
 /*Requirement 1*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 body{
   margin: 0;
   padding: 0;
   font-size: 16px; 
-  font-family: Raleway, "sans-seriff";
+  font-family: "Raleway", "sans-seriff";
   background-image: url(../images/concrete_seamless.png);
  
   
+}
+/*testing this out can delete laterr*/
+h1{
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+
+}
+
+h2{ 
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+
+}
+h3{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+  color: white;
+
+}
+
+p{
+  padding: 0 30px;
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  
+}
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+*:focus{
+  border: 2px solid black;
 }
 
 /*Requirement 2*/
@@ -15,12 +59,10 @@ header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;  
   
-  
-
-
-
   /*Your  code here again.*/
 
 }
@@ -28,7 +70,7 @@ header{
 /*Requirement 3*/
 .nav_links{
   /*Your code here again.*/
-  text-decoration: none;
+  list-style: none;
   display: flex;
   flex-direction: column;
 
@@ -41,21 +83,11 @@ header{
 .price{
     min-height: 500px;
     /*Your code here*/
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-    -webkit-box-pack: center;
-      -ms-flex-pack: center;
-        justify-content: center;
-    -webkit-box-align: center;
-      -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-line-pack: center;
-      align-content: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
 
     /*You must use flex.
@@ -69,9 +101,9 @@ header{
   background: #fff;
   border-radius: 7px;
   padding: 0 0 50px 0;
+
   /*Your code here.*/
-  -ms-flex-preferred-size: 400px;
-    flex-basis: 400px;
+  flex-basis: 400px;
   /*Take a look at flex-basis*/
 
 }
@@ -84,25 +116,40 @@ header{
   border: 2px solid #45ADAD;
   padding: 20px 0;
   border-radius: 7px 7px 0 0;
-}*/
+}
+.package >ul{
+  list-style: none;
+  padding: 0;
+}
+.package > ul li{
+  width: 90%;
+  margin: 20px auto;
+}
 
 
 /*Requirement 7*/
 .gallery{
   min-height: 600px;
   /*Your code here again.*/
-
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 /*Requirement 8*/
-/**  UNCOMMENT THIS CODE ONCE YOU
-/**  HAVE THE SELECTOR
-{
+
+.gallery > img{
   border: 10px #50C7C7 solid;
   margin: 10px;
   width: 300px;
 }
-*/
+.nav_links a {
+  text-decoration: none;
+  color: black;
+}
+
 
 /*Requirement 9*/
 #logo{
@@ -125,35 +172,68 @@ header{
 
   /*Requirement 10*/
   header{
+    flex-direction: row;
+    justify-content: space-between;
 
     /*Your code here again.*/  
   }
 
   /*Requirement 10*/
   .nav_links{
+    flex-direction: row;
+    justify-content: space-around;
     /*Your code here again.*/  
   }
 
   /*Requirement 11*/
   .package {
+    flex-basis: 250px;
+    align-items: center;
     /*Your code here again.*/
   } 
+  .big_card{
+    transform: scaleX(1.12);
+  }
 }
 
 /*Requirement 12*/
 /*Add media query to handle reduced-motion*/
 /*Your code here again.*/ 
 
-
+@media (prefers-reduced-motion:reduce ){
+  #logo{
+    animation: none;
+  }
+}
 
 @media print { 
 
   /*Requirement 13*/
+  body{
+    background-image: none;
+  }
   /*Requirement 14*/
+  .nav{
+    width: 100%;
+  }
   /*Requirement 15*/
+  .nav_links{
+    justify-content: space-between;
+  }
   /*Requirement 16*/
+  .price{
+    align-items: flex-start;
+    flex-direction: row;
+  }
   /*Requirement 17*/
+  .package{
+    border: 2px solid #45ADAD;
+    flex-basis: 200px;
+  }
   /*Requirement 18*/
+  .gallery{
+    display: none;
+  }
  
 }
 
