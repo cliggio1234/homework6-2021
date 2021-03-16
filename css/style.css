@@ -291,11 +291,14 @@ footer{
   }
   /*Requirement 15*/
   .nav_links{
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
   }
   /*Requirement 16*/
   .price{
-    align-items: flex-start;
+    align-items: flex-end;
     flex-direction: row;
   }
   /*Requirement 17*/
