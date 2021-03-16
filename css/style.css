@@ -244,7 +244,8 @@ footer{
   /*Requirement 10*/
   .nav_links{
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+  
     /*Your code here again.*/  
   }
 
@@ -291,15 +292,19 @@ footer{
   }
   /*Requirement 15*/
   .nav_links{
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
 
   }
   /*Requirement 16*/
   .price{
-    align-items: flex-end;
+    display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+
   }
   /*Requirement 17*/
   .package{
